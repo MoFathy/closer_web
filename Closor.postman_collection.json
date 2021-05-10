@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "04eae695-e85f-4655-8ac0-0fb6bdecf0e3",
+		"name": "Closor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Work Spaces",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{url}}/all_workplaces"
+			},
+			"response": []
+		},
+		{
+			"name": "All Products for WorkPlace",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"workplace_id\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/all_products"
+			},
+			"response": []
+		},
+		{
+			"name": "Lead Form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"name\": \"kareem222\",\r\n    \"phone\": 1234567654,\r\n    \"product_id\": 6,\r\n    \"mobile\": 22345678987654\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/lead"
+			},
+			"response": []
+		},
+		{
+			"name": "User-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"email\": \"a7medkamal775@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/login"
+			},
+			"response": []
+		},
+		{
+			"name": "User-login2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": 4,\r\n    \"email\": \"a7medkamal775@gmail.com\",\r\n    \"name\": \"kareem\",\r\n    \"phone\": \"01234567890\",\r\n    \"password\": 123456\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/login2"
+			},
+			"response": []
+		},
+		{
+			"name": "All_Leads",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "{{url}}/all_leads"
+			},
+			"response": []
+		},
+		{
+			"name": "update_profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": 4,\r\n    \"email\": \"a7medkamal775@gmail.com\",\r\n    \"name\": \"kareem\",\r\n    \"phone\": \"01234567890\",\r\n    \"password\": 123456\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/update_profile"
+			},
+			"response": []
+		},
+		{
+			"name": "qualified",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": 1,\r\n    \"status\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/qualified"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a2c894fa-fd5f-41f2-98ea-8da15302da29",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cd04495b-5ac8-4cf8-9044-b028bfe661aa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "dc967358-b910-4eb9-9ade-b0fb0aa41a9d",
+			"key": "url",
+			"value": "https://malexs.net/closor/public/api"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
